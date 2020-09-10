@@ -3,6 +3,7 @@
 
 #include "Grabber.h"
 #define OUT
+
 // Sets default values for this component's properties
 UGrabber::UGrabber()
 {
@@ -73,10 +74,10 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 
 
 	//if the physics handler is attached
-	if (PhysicsHandle->GrabbedComponent) {
-		PhysicsHandle->SetTargetLocation(GetReachLineEnd());
-	}
-	GetFirstPhysicsBodyInReach();
+	//if (PhysicsHandle->GrabbedComponent) {
+	//	PhysicsHandle->SetTargetLocation(GetReachLineEnd());
+	//}
+	//GetFirstPhysicsBodyInReach();
 }
 
 FHitResult UGrabber::GetFirstPhysicsBodyInReach()
